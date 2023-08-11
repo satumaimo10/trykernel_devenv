@@ -1,0 +1,19 @@
+{
+  "name": "trykernel_devenv",
+  "dockerComposeFile": "docker-compose.yml",  
+  "service": "trykernel_devenv",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "EditorConfig.EditorConfig",
+        "mcu-debug.debug-tracker-vscode",
+        "marus25.cortex-debug",
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools",
+        "donjayamanne.githistory",
+        "modio.gitlens"
+    }
+  }
+}

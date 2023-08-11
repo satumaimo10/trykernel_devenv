@@ -1,0 +1,15 @@
+version: '3'
+services:
+  trykernel_devenv:
+    container_name: 'trykernel_dev'
+    hostname: 'trykernel_dev'
+    restart: always
+    working_dir: '/workspace'
+    tty: true
+    privileged: true
+    volumes:
+      - ../workspace:/workspace
+      - /dev/bus/usb:/dev/bus/usb
+    build: 
+      context: ../
+      dockerfile: .devcontainer/Dockerfile
